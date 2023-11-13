@@ -1,0 +1,9 @@
+@use "../utils/mixins";
+
+.header__wrapper {
+    @include mixins.desktop-wrapper;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+    padding-bottom: 39px;
+}
