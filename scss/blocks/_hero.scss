@@ -1,0 +1,54 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+
+.hero__wrapper {
+    @include mixins.desktop-wrapper;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    color: variables.$white;
+    align-self: center;
+    justify-content: space-between;
+    margin-bottom: 204px;
+    margin-top: 132px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+.hero__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 12ch;
+    max-height: max-content;
+    font-size: 72px; 
+    font-weight: 700;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 82px;
+}
+
+.hero__text {
+    max-width: 38ch;
+    max-height: max-content;
+    font-size: 20px; 
+    font-weight: 400;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 56px;
+    line-height: 46px;
+}
+
+.hero__link {
+    color: #10151A;
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: max-content;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
+    background-color: #FFCF01;
+    border-radius: 16px;
+    padding: 16px 48px;
+}

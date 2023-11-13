@@ -14,14 +14,118 @@
   font-weight: 400;
   src: url("../fonts/montserrat-v26-cyrillic_latin_latin-ext-regular.woff2") format("woff2"), url("../fonts/montserrat-v26-cyrillic_latin_latin-ext-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+/* kanit-300 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/kanit-v15-latin_latin-ext-300.woff2") format("woff2"), url("../fonts/kanit-v15-latin_latin-ext-300.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* kanit-600 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/kanit-v15-latin_latin-ext-600.woff2") format("woff2"), url("../fonts/kanit-v15-latin_latin-ext-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* kanit-800 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/kanit-v15-latin_latin-ext-800.woff2") format("woff2"), url("../fonts/kanit-v15-latin_latin-ext-800.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 .header__wrapper {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
+  max-height: -moz-max-content;
+  max-height: max-content;
   display: flex;
+  flex-direction: row;
+  align-self: center;
   justify-content: space-between;
   padding-top: 41px;
   padding-bottom: 39px;
+}
+
+.header__logo {
+  max-height: -moz-max-content;
+  max-height: max-content;
+  align-self: center;
+}
+
+.header__login {
+  max-height: -moz-max-content;
+  max-height: max-content;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: center;
+  background-color: #243241;
+  border-radius: 12px;
+  padding: 11px 20px;
+}
+
+.hero__wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  align-self: center;
+  justify-content: space-between;
+  margin-bottom: 204px;
+  margin-top: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+.hero__title {
+  font-family: "Kanit", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 12ch;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  font-size: 72px;
+  font-weight: 700;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 82px;
+}
+
+.hero__text {
+  max-width: 38ch;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  font-size: 20px;
+  font-weight: 400;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 56px;
+  line-height: 46px;
+}
+
+.hero__link {
+  color: #10151A;
+  font-family: "Kanit", Tahoma, Geneva, Verdana, sans-serif;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: center;
+  background-color: #FFCF01;
+  border-radius: 16px;
+  padding: 16px 48px;
 }
 
 *,
@@ -34,7 +138,7 @@
 
 body {
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #243241;
+  background-color: #0A1117;
 }
 
 .visually-hidden {
@@ -49,4 +153,34 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.header__navigation {
+  align-self: center;
+}
+
+.navigation__list {
+  max-height: -moz-max-content;
+  max-height: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  list-style: none;
+  align-self: center;
+}
+
+.navigation__link {
+  max-height: -moz-max-content;
+  max-height: max-content;
+  align-self: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navigation__item {
+  max-height: -moz-max-content;
+  max-height: max-content;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */

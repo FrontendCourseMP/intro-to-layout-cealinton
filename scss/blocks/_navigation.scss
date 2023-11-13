@@ -1,0 +1,28 @@
+@use "../utils/variables";
+
+.header__navigation {
+    align-self: center;
+}
+
+.navigation__list {
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    list-style: none;
+    align-self: center;
+}
+
+.navigation__link {
+    max-height: max-content;
+    align-self: center;
+    text-decoration: none;
+    color: variables.$white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navigation__item {
+    max-height: max-content;
+    align-self: center;
+}

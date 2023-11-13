@@ -1,9 +1,30 @@
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .header__wrapper {
     @include mixins.desktop-wrapper;
+    max-height: max-content;
     display: flex;
+    flex-direction: row;
+    align-self: center;
     justify-content: space-between;
     padding-top: 41px;
     padding-bottom: 39px;
+}
+
+.header__logo {
+    max-height: max-content;
+    align-self: center;
+}
+
+.header__login {
+    max-height: max-content;
+    text-decoration: none;
+    color: variables.$white;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
+    background-color: #243241;
+    border-radius: 12px;
+    padding: 11px 20px;
 }
