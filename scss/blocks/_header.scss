@@ -1,6 +1,10 @@
 @use "../utils/mixins";
 @use "../utils/variables";
 
+.header__navigation {
+    align-self: center;
+}
+
 .header__wrapper {
     @include mixins.desktop-wrapper;
     max-height: max-content;

@@ -1,0 +1,39 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.journey__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: max-content;
+    color: variables.$white;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 80px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.journey__list {
+    max-height: max-content;
+    gap: 24px;
+    list-style: none;
+    align-self: center;
+    justify-content: center;
+}
+
+.journey__item {
+    color: #37424D;
+    text-align: center;
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    transition: color 0.6s;
+    cursor: default;
+
+    &:hover {
+        color: variables.$cian;
+    }
+
+}

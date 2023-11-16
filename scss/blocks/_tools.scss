@@ -1,0 +1,52 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+
+.tools__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    color: variables.$white;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 80px;
+    word-wrap: break-word;
+    text-align: center;
+    align-self: center;
+    margin-top: 200px;
+}
+
+
+
+.tools__list {
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+
+.tools__link {
+    color: variables.$grey;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+    text-decoration: none;
+    justify-content: space-between;
+    transition: color 0.6s;
+    cursor: default;
+
+    &:hover {
+        color: variables.$yellow;
+    }
+}
+
+.tools__video {
+    max-height: max-content;
+    align-self: center;
+    margin-top: 46px;
+    
+}
