@@ -87,12 +87,15 @@
     }
 }
 
-.info__image {
+
+.info__image-wrapper {
     max-height: max-content;
+    display: inline-block;
     align-self: center;
-    border-radius: 50px;
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
 }
 
 .info__more {
@@ -107,11 +110,4 @@
     background-color: #FFA800;
     border-radius: 100px;
     padding: 6px 24px;
-}
-
-.info__image-wrapper {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
 }

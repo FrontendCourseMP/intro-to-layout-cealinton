@@ -1,0 +1,14 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.sponsors__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: max-content;
+    font-size: 54px; 
+    font-weight: 700;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: variables.$white;
+}

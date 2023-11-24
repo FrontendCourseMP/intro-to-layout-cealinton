@@ -1,0 +1,12 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.press__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: max-content;
+    font-size: 54px; 
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: variables.$white;
+}

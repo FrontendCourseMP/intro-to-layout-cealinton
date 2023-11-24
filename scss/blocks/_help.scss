@@ -1,0 +1,50 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.help__title {
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: max-content;
+    font-size: 54px; 
+    font-weight: 700;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: variables.$white;
+}
+
+.help__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 48px;
+}
+
+.help__list {
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.help_item {
+    height: fit-content;
+}
+
+.help__link {
+    max-height: max-content;
+    text-decoration: none;
+    color: variables.$white;
+    font-size: 40px;
+    font-weight: 700;
+    flex-direction: row;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}

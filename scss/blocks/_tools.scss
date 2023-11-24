@@ -50,3 +50,17 @@
     margin-top: 46px;
     
 }
+
+.tools__play {
+    max-height: max-content;
+    font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: variables.$black;
+    background-color: #FFA800;
+    border-radius: 100px;
+    padding: 6px 24px;
+}
