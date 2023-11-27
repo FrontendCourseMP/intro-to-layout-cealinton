@@ -89,25 +89,29 @@
 
 
 .info__image-wrapper {
-    max-height: max-content;
-    display: inline-block;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 178px;
+  }
+  
+  .info__image {
+    max-width: 100%;
+  }
 
 .info__more {
     max-height: max-content;
     font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
     align-self: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 32px;
     color: variables.$black;
     background-color: #FFA800;
     border-radius: 100px;
     padding: 6px 24px;
+    margin-top: -25px;
 }
