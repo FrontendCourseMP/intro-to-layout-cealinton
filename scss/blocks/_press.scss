@@ -1,6 +1,10 @@
 @use "../utils/mixins";
 @use "../utils/variables";
 
+.press__wrapper {
+    @include mixins.desktop-wrapper;
+}
+
 .press__title {
     font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
     max-height: max-content;
@@ -8,5 +12,48 @@
     font-weight: 700;
     margin-bottom: 40px;
     line-height: 80px;
+    margin-left: 390px;
+    margin-right: 1356px;
     color: variables.$white;
+    display: block;
+}
+
+
+.press__list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    border-radius: 20px;
+}
+
+.press__item {
+    
+    &--decrypt {
+        background-color: #77E6FF;
+        border-radius: 20px;
+    }
+    &--blockworks {
+        background-color: #E2C1F9;
+        border-radius: 20px;
+    }
+    &--techcrunch {
+        background-color: #DBE268;
+        border-radius: 20px;
+    }
+}
+
+.press__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.press__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.press__image {
+    height: auto;
 }
