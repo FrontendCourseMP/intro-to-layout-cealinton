@@ -13,13 +13,6 @@
     color: variables.$white;
 }
 
-.help__image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-bottom: 48px;
-}
 
 .help__list {
     padding: 0;
@@ -32,6 +25,23 @@
     padding-bottom: 214px;
     
 }
+
+.help__people {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.people__img {
+    margin-right: 24px;
+}
+
+.people__image {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .help_item {
     height: fit-content;

@@ -3,6 +3,7 @@
 
 .press__wrapper {
     @include mixins.desktop-wrapper;
+    align-items: stretch;
 }
 
 .press__title {

@@ -1,6 +1,12 @@
 @use "../utils/mixins";
 @use "../utils/variables";
 
+.podcasts__wrapper {
+    @include mixins.desktop-wrapper;
+    align-items: stretch;
+}
+
+
 .podcasts__title {
     font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
     max-height: max-content;
@@ -9,4 +15,42 @@
     margin-bottom: 40px;
     line-height: 80px;
     color: variables.$white;
+    display: block;
+}
+
+.podcasts__list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    border-radius: 20px;
+}
+
+.podcasts__item {
+    border-radius: 20px;
+    border: 2px solid #2A3744;
+    background: #121E28;
+}
+
+.podcasts__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: variables.$white;
+}
+
+.podcasts__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.podcasts__image {
+    height: auto;
+    border-radius: 9px;
+}
+
+.podcasts__text {
+    color: #E2E2E2;
+    font-size: 17px;
+    font-weight: 600;
 }
