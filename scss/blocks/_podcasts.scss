@@ -6,22 +6,21 @@
     align-items: stretch;
 }
 
-
 .podcasts__title {
     font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
     max-height: max-content;
-    font-size: 54px; 
-    font-weight: 700;
     margin-bottom: 40px;
-    line-height: 80px;
     color: variables.$white;
     display: block;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 29px;
 }
 
 .podcasts__list {
     display: flex;
     list-style: none;
-    gap: 24px;
+    gap: 28px;
     border-radius: 20px;
 }
 
@@ -38,12 +37,6 @@
     color: variables.$white;
 }
 
-.podcasts__title {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 29px;
-}
-
 .podcasts__image {
     height: auto;
     border-radius: 9px;
@@ -53,4 +46,6 @@
     color: #E2E2E2;
     font-size: 17px;
     font-weight: 600;
+    opacity: 0.8;
 }
+
