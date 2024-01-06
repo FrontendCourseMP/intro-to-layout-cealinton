@@ -14,7 +14,16 @@
     color: variables.$white;
 }
 
+.sponsors__list {
+    display: flex;
+    align-content: stretch; 
+    gap: 40px;
+    list-style: none;
+    max-width: 100%;
+    max-height: max-content;
+}
+
 .sponsors__image {
-    width: 100vw;
-    height: auto;
+    max-width: 100%;
+    border-radius: 30px;
 }
