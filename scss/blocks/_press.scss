@@ -4,6 +4,7 @@
 .press__wrapper {
     @include mixins.desktop-wrapper;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .press__title {
@@ -17,6 +18,7 @@
     margin-right: 1356px;
     color: variables.$white;
     display: block;
+    
 }
 
 

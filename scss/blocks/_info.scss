@@ -61,6 +61,8 @@
     height: fit-content;
     display: flex;
     align-items: center;
+    color: tomato;
+    
     &--pink {
         color: variables.$pink;
     }

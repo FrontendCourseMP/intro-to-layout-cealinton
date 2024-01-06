@@ -4,6 +4,7 @@
 .podcasts__wrapper {
     @include mixins.desktop-wrapper;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .podcasts__title {
