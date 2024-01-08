@@ -1,0 +1,172 @@
+@use "../utils/variables";
+
+.grid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+    width: 220px;
+    height: 220px;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+}
+
+.grid__item {
+    border: variables.$black solid 2px;
+
+    background-color: variables.$white;
+    color: variables.$black;
+
+    &--1 {
+        background-color: variables.$white;
+        grid-column: 1/4;
+        color: variables.$white;
+    }
+    &--2 {
+        background-color: variables.$yellow;
+        grid-column: 4/6;
+        color: variables.$yellow;
+    }
+
+    &--3 {
+        background-color: variables.$red;
+        grid-column: 1/4;
+        grid-row: 2/4;
+        color: variables.$red;
+    }
+
+    &--4 {
+        background-color: variables.$yellow;
+        grid-column: 4/6;
+        color: variables.$yellow;
+    }
+
+    &--5 {
+        color: variables.$white;
+    }
+
+    &--6 {
+        color: variables.$white;
+    }
+
+    &--7 {
+        background-color: variables.$black;
+        color: variables.$black;
+    }
+
+    &--8 {
+        background-color: variables.$white;
+        grid-column: 2/4;
+        color: variables.$white;
+    }
+
+    &--9 {
+        background-color: variables.$white;
+        grid-column: 4/6;
+        color: variables.$white;
+    }
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        "dashboard__wrapper content";
+    min-height: 100vh;
+}
+
+.dashboard__wrapper {
+    grid-area: dashboard__wrapper;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+        "dashboard__wrapper first first first"
+        "dashboard__wrapper second third fourth"
+        "dashboard__wrapper fifth fifth sixth";
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+.content__item {
+    &--n1 {
+        grid-area: first;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    &--n2 {
+        grid-area: second;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    &--n3 {
+        grid-area: third;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    &--n4 {
+        grid-area: fourth;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    &--n5 {
+        grid-area: fifth;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    &--n6 {
+        grid-area: sixth;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.content__image {
+    width: 500px;
+    height: 300px;
+}
+
+.pictures__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.pictures__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100px;
+}
+
+.pictures__image {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: 150px;
+    height: 150px;
+}
+
+.pictures__link {
+    color: variables.$black;
+    grid-column: 2;
+    grid-row: 2;
+}
