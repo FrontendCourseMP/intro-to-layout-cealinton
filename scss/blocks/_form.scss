@@ -14,6 +14,10 @@
   color: aqua;
 }
 
+.form__subsubtitle {
+  color: violet;
+}
+
 .form__text {
   color: white;
 }
@@ -40,4 +44,8 @@
 
 .button__send {
   background: plum;
+}
+
+.footer__logo {
+  transform: rotate(45deg) scale(1.5) skew(20deg, 10deg);
 }

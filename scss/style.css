@@ -383,6 +383,76 @@ template {
   background-color: #243241;
   border-radius: 12px;
   padding: 11px 20px;
+  margin-left: auto;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header__login {
+    margin-top: 10px;
+  }
+}
+
+.header__burger-menu {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__burger-menu {
+    flex-direction: column;
+  }
+}
+
+.burger-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-toggle {
+    display: block;
+  }
+}
+
+.burger-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+@media (min-width: 769px) {
+  .burger-icon {
+    display: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.burger-toggle:checked ~ .navigation {
+  display: flex;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  margin-bottom: 10px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 .hero__wrapper {
@@ -856,7 +926,7 @@ body {
 
 .footer {
   background: #121E28;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

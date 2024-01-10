@@ -602,51 +602,78 @@ body {
   list-style: none;
 }
 
-.form__wrapper {
-  max-width: 1140px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.form__title {
-  color: aqua;
-}
-
-.form__subtitle {
-  color: aqua;
-}
-
-.form__subsubtitle {
-  color: violet;
-}
-
-.form__text {
-  color: white;
-}
-
-.form__req {
-  color: tomato;
-}
-
-.form__ul {
-  list-style: none;
-  color: white;
-}
-
-.form__button {
-  list-style: none;
-  color: white;
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0A1117;
 }
 
-.button__res {
-  background: plum;
+.combined-container {
+  display: flex;
+  gap: 20px;
 }
 
-.button__send {
-  background: plum;
+.flip-card {
+  perspective: 1000px;
+  width: 50px;
+  height: 50px;
 }
 
-.footer__logo {
-  transform: rotate(45deg) scale(1.5) skew(20deg, 10deg);
-}/*# sourceMappingURL=stylesform.css.map */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background-color: #2ecc71;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.running-line {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 10px;
+}
+.running-line img {
+  animation: running-line-animation 5s linear infinite;
+  width: 100px;
+  height: auto;
+}
+
+@keyframes running-line-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=stylesdemo.css.map */
