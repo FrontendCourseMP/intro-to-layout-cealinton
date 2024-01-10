@@ -1,0 +1,43 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+
+.form__wrapper {
+    @include mixins.desktop-wrapper;
+}
+
+.form__title {
+  color: aqua;
+}
+
+.form__subtitle {
+  color: aqua;
+}
+
+.form__text {
+  color: white;
+}
+
+.form__req {
+  color: tomato;
+}
+
+
+.form__ul {
+  list-style: none;
+  color: white;
+}
+
+.form__button {
+  list-style: none;
+  color: white;
+  display: flex;
+}
+
+.button__res {
+  background: plum;
+}
+
+.button__send {
+  background: plum;
+}
