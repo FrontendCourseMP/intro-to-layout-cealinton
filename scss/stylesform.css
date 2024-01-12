@@ -628,42 +628,43 @@ body {
 }
 
 .form__title {
-  color: aqua;
+  color: #23C9DE;
 }
 
 .form__subtitle {
-  color: aqua;
+  color: #23C9DE;
 }
 
 .form__subsubtitle {
-  color: violet;
+  color: #D387F7;
 }
 
 .form__text {
-  color: white;
+  color: #FFFFFF;
 }
 
 .form__req {
-  color: tomato;
+  color: #FF0000;
 }
 
 .form__ul {
   list-style: none;
-  color: white;
+  color: #FFFFFF;
 }
 
 .form__button {
-  list-style: none;
-  color: white;
   display: flex;
+  gap: 15px;
+  list-style: none;
+  color: #FFFFFF;
 }
 
 .button__res {
-  background: plum;
+  background: #FFB4D3;
 }
 
 .button__send {
-  background: plum;
+  background: #FF9E9E;
 }
 
 .footer__logo {

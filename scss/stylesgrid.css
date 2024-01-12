@@ -578,13 +578,13 @@ body {
 
 .dashboard__wrapper {
   grid-area: dashboard__wrapper;
-  background-color: #333;
-  color: white;
+  background-color: #707F8D;
+  color: #FFFFFF;
   padding: 20px;
 }
-.dashboard__wrapper a {
+.dashboard__wrapper .dashboard__link {
   display: block;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   margin-bottom: 10px;
 }
@@ -592,45 +592,45 @@ body {
 .content {
   grid-area: content;
   display: grid;
+  padding: 20px;
   grid-template-areas: "dashboard__wrapper first first first" "dashboard__wrapper second third fourth" "dashboard__wrapper fifth fifth sixth";
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
-  padding: 20px;
 }
 
 .content__item--n1 {
   grid-area: first;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
 .content__item--n2 {
   grid-area: second;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
 .content__item--n3 {
   grid-area: third;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
 .content__item--n4 {
   grid-area: fourth;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
 .content__item--n5 {
   grid-area: fifth;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
 .content__item--n6 {
   grid-area: sixth;
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
 }
@@ -648,16 +648,16 @@ body {
 
 .pictures__div {
   display: grid;
+  width: 100px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 100px;
 }
 
 .pictures__image {
-  grid-column: 1/4;
-  grid-row: 1/4;
   width: 150px;
   height: 150px;
+  grid-column: 1/4;
+  grid-row: 1/4;
 }
 
 .pictures__link {

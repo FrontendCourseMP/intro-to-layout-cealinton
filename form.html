@@ -99,6 +99,13 @@
                                 <input type="text" placeholder="Your name" id="name" name="user_name" required />
                             </li>
                             <li>
+                                <label for="password" class="form__pass">
+                                    <span class="form__text">Password: </span>
+                                    <strong><span aria-label="required" class="form__req">*</span></strong>
+                                </label>
+                                <input type="password" placeholder="min 8 characters" id="pwd" name="password" required />
+                            </li>
+                            <li>
                                 <label for="birthdate" class="form__birth">
                                     <span class="form__text">Date of Birth:</span>
                                     <strong><span aria-label="required" class="form__req">*</span></strong>
@@ -110,31 +117,30 @@
                                     <ul class="form__ul">
                                         <span class="form__text">Gender:</span>
                                         <li class="radio_class">
-                                            <label class="custom-radio" for="title_1" >
-                                                <input type="radio" id="title_1" name="title" value="A"/>
+                                            <label class="custom-radio" for="title" >
+                                                <input type="radio" id="title" name="title" value="A"/>
                                                 <span class="form__text">Woman</span></label></li>
                                         <li class="radio_class">
-                                            <label class="custom-radio" for="title_2">
-                                                <input type="radio" id="title_2" name="title" value="K"/>
+                                            <label class="custom-radio" for="title">
+                                                <input type="radio" id="title" name="title" value="K"/>
                                                 <span class="form__text">Man</span></label>
+                                        </li>
+                                        <li class="radio_class">
+                                            <label class="custom-radio" for="title">
+                                                <input type="radio" id="title" name="title" value="K"/>
+                                                <span class="form__text">Other</span></label>
                                         </li>
                                     </ul>
                                 </fieldset>
                             </li>
-                            <li>
-                                <label for="pwd" class="form__pass">
-                                    <span class="form__text">Password: </span>
-                                    <strong><span aria-label="required" class="form__req">*</span></strong>
-                                </label>
-                                <input type="password" id="pwd" name="password" required />
-                            </li>
-                            <h2 class="form__subtitle">CONTACTS</h2>
+                            
+                            <h2 class="form__subtitle">YOUR CONTACTS</h2>
                             <li>
                                 <label for="mail" class="form__email">
                                     <span>Email:</span>
                                     <strong><span aria-label="required" class="form__req">*</span></strong>
                                 </label>
-                                <input type="email" placeholder="Email" id="mail" name="user_email" required />
+                                <input type="email" placeholder="email@gmail.com" id="mail" name="user_email" required />
                             </li>
                             <li>
                                 <label for="phone" class="form__phone">
@@ -148,29 +154,29 @@
                                     <ul class="form__ul">
                                         <span>Сonvenient time to contact:</span>
                                         <li>
-                                            <label for="title_3">
-                                                <input class="checkbox_class" type="checkbox" id="title_3"
+                                            <label for="time1">
+                                                <input class="checkbox_class" type="checkbox" id="time1"
                                                     name="title_1" value="A" />
                                                 Morning
                                             </label>
                                         </li>
                                         <li>
-                                            <label for="title_4">
-                                                <input class="checkbox_class" type="checkbox" id="title_4"
+                                            <label for="time2">
+                                                <input class="checkbox_class" type="checkbox" id="time2"
                                                     name="title_1" value="K" />
                                                 Afternoon
                                             </label>
                                         </li>
                                         <li>
-                                            <label for="title_5">
-                                                <input class="checkbox_class" type="checkbox" id="title_5"
+                                            <label for="time3">
+                                                <input class="checkbox_class" type="checkbox" id="time3"
                                                     name="title_1" value="K" />
                                                 Evening
                                             </label>
                                         </li>
                                         <li>
-                                            <label for="title_7">
-                                                <input class="checkbox_class" type="checkbox" id="title_7"
+                                            <label for="time4">
+                                                <input class="checkbox_class" type="checkbox" id="time4"
                                                     name="title_1" value="K" />
                                                 All day
                                             </label>
@@ -195,99 +201,95 @@
             <div class="wrapper">
               <form action="" class="dark dl-form">
                 <fieldset>
-                  <legend class="form__subtitle">Псевдо-</legend>
                   <dl>
-                    <dt class="form__subsubtitle">Псевдоэлемент</dt>
+                    <dt class="form__subsubtitle">Псевдоэлемент - </dt>
                     <dd class="form__text">
-                      Ключевое слово, добавляемое к селектору, которое позволяет
-                      стилизовать определённую часть выбранного элемента.
+                        ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента. Например, псевдоэлемент ::first-line может быть использован для изменения шрифта первой строки абзаца.
                     </dd>
-                    <dt class="form__subsubtitle">Псевдокласс</dt>
+                    <dt class="form__subsubtitle">Псевдокласс - </dt>
                     <dd class="form__text">
-                      Селектор, который выбирает элементы, находящиеся в
-                      специфическом состоянии, например, они являются первым
-                      элементом своего типа, или на них наведён указатель мыши.
+                        Ключевое слово, добавленное к селектору, которое определяет его особое состояние. Например, :hover может быть использован для изменения цвета кнопки при наведении курсора на неё.
                     </dd>
                   </dl>
                 </fieldset>
-                <fieldset class="pseudo-classes">
+                <fieldset class="pseud__classes">
                   <legend class="form__subtitle">Псевдоклассы</legend>
                   <ul>
                     <li>
                       <label for="" class="form__text">
                         :has
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         :checked
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         :active
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         :hover
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         :not()
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         :link
-                        <input type="checkbox" />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="pseudo-elements">
+                <fieldset class="pseud__elements">
                   <legend class="form__subtitle">Псевдоэлементы</legend>
                   <ul>
                     <li>
                       <label for="" class="form__text">
-                        ::after
-                        <input type="checkbox" />
-                      </label>
-                    </li>
-                    <li>
-                      <label for="" class="form__text">
-                        ::cue
-                        <input type="checkbox" />
-                      </label>
-                    </li>
-                    <li>
-                      <label for="" class="form__text">
-                        ::selection
-                        <input type="checkbox" checked />
-                      </label>
-                    </li>
-                    <li>
-                      <label for="" class="form__text">
-                        ::first-line
-                        <input type="checkbox" />
-                      </label>
-                    </li>
-                    <li>
-                      <label for="" class="form__text">
                         ::first-letter
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                     <li>
                       <label for="" class="form__text">
                         ::before
-                        <input type="checkbox" checked />
+                        <input type="checkbox" checked/>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="" class="form__text">
+                        ::selection
+                        <input type="checkbox" checked/>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="" class="form__text">
+                        ::first-line
+                        <input type="checkbox" checked/>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="" class="form__text">
+                        ::after
+                        <input type="checkbox" checked/>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="" class="form__text">
+                        ::cue
+                        <input type="checkbox" checked/>
                       </label>
                     </li>
                   </ul>
@@ -296,7 +298,6 @@
             </div>
           </section>
         </main>
-
     <footer class="footer">
         <div class="footer__wrapper">
             <a href="./index.html" class="footer__logo logo">

@@ -7,43 +7,44 @@
 }
 
 .form__title {
-  color: aqua;
+  color: variables.$cian;
 }
 
 .form__subtitle {
-  color: aqua;
+  color: variables.$cian;
 }
 
 .form__subsubtitle {
-  color: violet;
+  color: variables.$lavender;
 }
 
 .form__text {
-  color: white;
+  color: variables.$white;
 }
 
 .form__req {
-  color: tomato;
+  color: variables.$red;
 }
 
 
 .form__ul {
   list-style: none;
-  color: white;
+  color: variables.$white;
 }
 
 .form__button {
-  list-style: none;
-  color: white;
   display: flex;
+  gap: 15px;
+  list-style: none;
+  color: variables.$white;
 }
 
 .button__res {
-  background: plum;
+  background: variables.$laveder;
 }
 
 .button__send {
-  background: plum;
+  background: variables.$beige;
 }
 
 .footer__logo {
