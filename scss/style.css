@@ -455,6 +455,12 @@ template {
   font-weight: bold;
 }
 
+.skip-link {
+  display: block;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
 .hero__wrapper {
   max-width: 1140px;
   width: 100%;

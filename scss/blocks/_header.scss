@@ -5,6 +5,8 @@
     align-self: center;
 }
 
+
+  
 .header__wrapper {
     @include mixins.desktop-wrapper;
     max-height: max-content;
@@ -99,3 +101,8 @@
     font-weight: bold;
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    transform: translateY(-100%);
+  }
