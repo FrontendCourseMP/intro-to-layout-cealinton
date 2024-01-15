@@ -12,11 +12,11 @@
 <body>
   <header class="header">
     <div class="header__skip">
-      <a class="skip-link" href="#info">
+      <a class="skip-link" href="#main">
         Skip to content
       </a>
       <div class="header__wrapper">
-        <a href="#" class="header__logo logo">
+        <a href="./index.html" class="header__logo logo">
           <svg width="193" height="33" viewBox="0 0 193 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M71.5367 9.42383C75.9108 9.42383 78.8596 11.1686 78.8596 14.5843V15.3952H74.9279V14.5843C74.9279 13.2082 73.65 12.5201 71.5367 12.5201H71.0944C68.9319 12.5201 67.7032 13.159 67.7032 14.0928V14.3385C67.7032 15.4689 68.6862 15.7884 72.6671 16.4519C77.1641 17.2628 79.1545 18.5898 79.1545 21.3666V21.6123C79.1545 24.3891 76.648 26.3796 71.6104 26.3796H71.1435C66.0568 26.3796 63.4766 24.3646 63.4766 20.9488V20.1871H67.4083V20.9488C67.4083 22.6936 68.7599 23.2588 71.1681 23.2588H71.6104C73.8958 23.2588 75.1736 22.7181 75.1736 21.6615V21.4403C75.1736 20.3837 73.9941 19.9168 70.0377 19.2778C65.8848 18.6144 63.7223 17.3611 63.7223 14.5351V14.2157C63.7223 11.1686 66.5237 9.42383 71.0944 9.42383H71.5367Z"
@@ -65,7 +65,6 @@
         <div class="header__burger-menu">
           <input type="checkbox" id="burger-toggle" class="burger-toggle">
           <label for="burger-toggle" class="burger-icon"><img src="./img/Shape.png"></label>
-
           <nav class="header__navigation navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -101,7 +100,7 @@
       </div>
     </div>
   </header>
-  <main class="main">
+  <main class="main" id="main">
     <section class="main__hero hero">
       <div class="hero__wrapper">
         <h1 class="hero__title">The easiest way to start a DAO</h1>
@@ -408,8 +407,8 @@
         <h2 class="email__title">Weekly digest</h2>
         <p class="email__text">Latest news in DAOs and Web3</p>
         <form action="" method="get" class="email__form form">
-          <label class="form__label">
-            <input type="email" name="email" placeholder="Your email" required class="form__input">
+          <label for="email" class="form__label">
+            <input type="email"id="email" name="email" placeholder="Your email" required class="form__input">
           </label>
           <button type="button" class="form__button">Subscribe</button>
         </form>
@@ -423,65 +422,65 @@
         <ul class="sponsors__list">
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_1.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_1.jpg" alt="alliance_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_2.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_2.jpg" alt="digital_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_3.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_3.jpg" alt="OneBlock_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_4.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_4.jpg" alt="Fika_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_5.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_5.jpg" alt="pear_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_6.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_6.jpg" alt="ShimaCapital_logo" class="sponsors__image">
+              </a></span>
           </li>
         </ul>
         <ul class="sponsors__list">
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_7.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_7.jpg" alt="GreatOaks_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_8.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_8.jpg" alt="Norwest_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_9.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_9.jpg" alt="FiftyYears_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_10.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_10.jpg" alt="circle_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_11.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_11.jpg" alt="ProtocolLabs_logo" class="sponsors__image">
+              </a></span>
           </li>
           <li class="sponsors__item">
             <span class="sr-only"><a href="#" class="sponsors__link">
-              <img src="./img/BackedBy/Logo_12.jpg" alt="logo" class="sponsors__image">
-            </a></span>
+                <img src="./img/BackedBy/Logo_12.jpg" alt="Venturesouq_logo" class="sponsors__image">
+              </a></span>
           </li>
         </ul>
       </div>
@@ -506,7 +505,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M8.10915 1.30396L13 6.30396L8.10915 11.304L6.71548 9.96422L9.35459 7.26621H0V5.3417H9.35459L6.71548 2.64369L8.10915 1.30396Z"
-                  fill="white" />
+                  fill="#10151A" />
               </svg>
             </a>
           </li>
@@ -527,7 +526,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M8.10915 1.30396L13 6.30396L8.10915 11.304L6.71548 9.96422L9.35459 7.26621H0V5.3417H9.35459L6.71548 2.64369L8.10915 1.30396Z"
-                  fill="white" />
+                  fill="#10151A" />
               </svg>
             </a>
           </li>
@@ -549,7 +548,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M8.10915 1.30396L13 6.30396L8.10915 11.304L6.71548 9.96422L9.35459 7.26621H0V5.3417H9.35459L6.71548 2.64369L8.10915 1.30396Z"
-                  fill="white" />
+                  fill="#10151A" />
               </svg>
             </a>
           </li>
@@ -631,7 +630,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a href="" class="footer__logo logo">
+      <a href="./index.html" class="footer__logo logo">
         <svg width="193" height="33" viewBox="0 0 193 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M71.5367 9.42383C75.9108 9.42383 78.8596 11.1686 78.8596 14.5843V15.3952H74.9279V14.5843C74.9279 13.2082 73.65 12.5201 71.5367 12.5201H71.0944C68.9319 12.5201 67.7032 13.159 67.7032 14.0928V14.3385C67.7032 15.4689 68.6862 15.7884 72.6671 16.4519C77.1641 17.2628 79.1545 18.5898 79.1545 21.3666V21.6123C79.1545 24.3891 76.648 26.3796 71.6104 26.3796H71.1435C66.0568 26.3796 63.4766 24.3646 63.4766 20.9488V20.1871H67.4083V20.9488C67.4083 22.6936 68.7599 23.2588 71.1681 23.2588H71.6104C73.8958 23.2588 75.1736 22.7181 75.1736 21.6615V21.4403C75.1736 20.3837 73.9941 19.9168 70.0377 19.2778C65.8848 18.6144 63.7223 17.3611 63.7223 14.5351V14.2157C63.7223 11.1686 66.5237 9.42383 71.0944 9.42383H71.5367Z"
