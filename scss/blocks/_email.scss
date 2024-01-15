@@ -10,6 +10,7 @@
     border: 2px solid #2A3744;
     background: #121E28;
     justify-content: center;
+    margin: 0 auto;
     
 
 }
@@ -33,6 +34,10 @@
     font-weight: 600;
 }
 
+.email__form {
+    width: 100%;
+}
+
 .form__label {
     display: flex;
     width: 506px;
@@ -40,6 +45,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: 16px;
+    color: #ffffff;
     border: 2px solid #2A3744;
     background: #121E28;
     text-decoration: none;
@@ -55,7 +61,6 @@
 }
 
 .form__input {
-    width: 2000px;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -67,4 +72,5 @@
     padding-left: 40px;
     border-radius: 10px;
     box-shadow: none;
+    box-sizing: border-box;
 }

@@ -868,6 +868,7 @@ body {
   border: 2px solid #2A3744;
   background: #121E28;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .email__title {
@@ -889,6 +890,10 @@ body {
   font-weight: 600;
 }
 
+.email__form {
+  width: 100%;
+}
+
 .form__label {
   display: flex;
   width: 506px;
@@ -896,6 +901,7 @@ body {
   align-items: center;
   flex-shrink: 0;
   border-radius: 16px;
+  color: #ffffff;
   border: 2px solid #2A3744;
   background: #121E28;
   text-decoration: none;
@@ -911,7 +917,6 @@ body {
 }
 
 .form__input {
-  width: 2000px;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
@@ -923,6 +928,7 @@ body {
   padding-left: 40px;
   border-radius: 10px;
   box-shadow: none;
+  box-sizing: border-box;
 }
 
 .footer__wrapper {
